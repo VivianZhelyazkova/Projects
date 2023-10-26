@@ -1,1 +1,1 @@
-[{"city": "sofia", "name": "mimi", "phone": "545"}, {"city": "varna", "name": "sisi", "phone": "364"}]
+[{"name": "gosho"}, {"name": "gosho_1"}, {"name": "pesho"}, {"name": "gosho_2"}, {"name": "pesho_1"}]
