@@ -1,14 +1,11 @@
 class CashRegister:
 
-    __money = 0
+    def __init__(self, money: float):
+        self.__money = money
 
-    @staticmethod
-    def get_money():
-        money = CashRegister.__money
+    def get_money(self):
+        money = self.__money
         return money
 
-    @staticmethod
-    def add_money(amount: float):
-        CashRegister.__money += amount
-
-
+    def add_money(self, amount: float):
+        self.__money += amount
