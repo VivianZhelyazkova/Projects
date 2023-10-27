@@ -6,10 +6,11 @@ from Practice.music_store.string_instrument import StringInstrument
 from Practice.music_store.woodwind_instrument import WoodwindInstrument
 from store import Store
 from instrument import Instrument, InstrumentType
+from shop_statistics_util import *
 
 guitar = StringInstrument("Guitar", 2500.00, 4, InstrumentType.STRING)
 violin = StringInstrument("Violin", 500.00, 13, InstrumentType.STRING)
-drums = PercussionInstrument("Drums", 3100.00, 2, InstrumentType.PERCUSSION)
+drum = PercussionInstrument("Drum", 3100.00, 2, InstrumentType.PERCUSSION)
 tambourine = PercussionInstrument("Tambourine", 100.00, 23, InstrumentType.PERCUSSION)
 synthesizer = ElectronicInstrument("Synthesizer", 800.00, 9, InstrumentType.ELECTRONIC)
 oscillator = ElectronicInstrument("Oscillator", 300.00, 7, InstrumentType.ELECTRONIC)
@@ -18,12 +19,23 @@ organ = KeyboardInstrument("Organ", 52000.00, 1, InstrumentType.KEYBOARD)
 saxophone = WoodwindInstrument("Saxophone", 1200.00, 12, InstrumentType.WOODWIND)
 flute = WoodwindInstrument("Flute", 220.00, 42, InstrumentType.WOODWIND)
 
-instruments: list[Instrument] = [guitar, violin, drums, tambourine, synthesizer, oscillator, piano, organ, saxophone,
+instruments: list[Instrument] = [guitar, violin, drum, tambourine, synthesizer, oscillator, piano, organ, saxophone,
                                  flute]
 music_shop = Store(instruments, CashRegister(0))
 
 music_shop.sell("Drums", 2)
-music_shop.sell("Drums", 2)
-print(music_shop.cash_register.get_money())
-music_shop.add_instruments("Drums", 3)
-music_shop.print_catalog()
+music_shop.sell("Drums", 6)
+music_shop.sell("Tambourine", 12)
+music_shop.sell("Tambourine", 3)
+music_shop.sell("Organ", 1)
+music_shop.sell("Piano", 3)
+
+music_shop.add_instruments("Drum", 3)
+music_shop.add_instruments("Drum", 43535)
+
+# sold_items_sorted_by_count(music_shop.sold_instruments)
+# total_money_earned_from_sold_instruments(music_shop.sold_instruments)
+# get_top_selling_instrument(music_shop.sold_instruments)
+# get_least_selling_instrument(music_shop.sold_instruments, music_shop.instruments)
+# top_selling_instrument_type_by_count(music_shop.sold_instruments)
+# top_selling_instrument_type_by_price(music_shop.sold_instruments)

@@ -9,3 +9,6 @@ class CashRegister:
 
     def add_money(self, amount: float):
         self.__money += amount
+
+    def subtract_money(self, amount: float):
+        self.__money -= amount

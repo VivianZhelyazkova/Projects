@@ -6,6 +6,8 @@ from shop_statistics_util import *
 
 class Store:
 
+    SELLER_DISCOUNT = 0.7
+
     def __init__(self, instruments: list[Instrument],cash_register: CashRegister):
         self.instruments = instruments
         self.sold_instruments: list[Instrument] = []
@@ -31,9 +33,15 @@ class Store:
                     print(f"Instrument not in stock")
 
     def add_instruments(self, name: str, count: int):
+        display_name = name + "s" if count > 1 else name
         for instrument in self.instruments:
             if name == instrument.name:
-                instrument.quantity += count
+                if self.cash_register.get_money() >= count * (instrument.price * Store.SELLER_DISCOUNT):
+                    instrument.quantity += count
+                    self.cash_register.subtract_money(count * (instrument.price * Store.SELLER_DISCOUNT))
+                    print(f"{count} {display_name} were added to the store.")
+                else:
+                    print(f"Not enough money to buy {count} {display_name}!")
 
     def print_catalog(self, reverse: bool = False):
         self.sort_by(lambda item: item.instrument_type, "type")
