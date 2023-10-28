@@ -1,9 +1,9 @@
-from Practice.music_store.cash_register import CashRegister
-from Practice.music_store.electronic_instrument import ElectronicInstrument
-from Practice.music_store.keyboard_instrument import KeyboardInstrument
-from Practice.music_store.percussion_instrument import PercussionInstrument
-from Practice.music_store.string_instrument import StringInstrument
-from Practice.music_store.woodwind_instrument import WoodwindInstrument
+from cash_register import CashRegister
+from electronic_instrument import ElectronicInstrument
+from keyboard_instrument import KeyboardInstrument
+from percussion_instrument import PercussionInstrument
+from string_instrument import StringInstrument
+from woodwind_instrument import WoodwindInstrument
 from store import Store
 from instrument import Instrument, InstrumentType
 from shop_statistics_util import *

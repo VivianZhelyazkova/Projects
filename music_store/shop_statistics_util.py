@@ -1,6 +1,6 @@
 import copy
 
-from Practice.music_store.instrument import Instrument, InstrumentType
+from instrument import Instrument, InstrumentType
 
 
 def sold_items_sorted_by_count(sold_instruments: list[Instrument]):

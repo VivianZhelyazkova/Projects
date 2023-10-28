@@ -1,5 +1,6 @@
 # Music store simulator
 
+
 **With this project we are aiming to simulate the operation of a musical instruments store.**
 
 There are various types of musical instruments in the store's catalog:
@@ -33,7 +34,7 @@ The following operations can be performed in the store:
     - Providing current information about the type of instruments that are most in demand (with the highest total quantity sold from that type).
     - Providing current information about the type of instruments from which the store has the highest revenue (with the highest total sales amount)."
 
-### Ideas for future development and collaboration
+### ***Ideas for future development and collaboration***
 
 1. Create an "Instrument Supplier":
 
@@ -45,3 +46,7 @@ The following operations can be performed in the store:
 3. Change the Logic for Regular Deliveries:
    - Modify the logic so that the store makes scheduled deliveries for all instruments with zero stock (for example, once a month).
 
+```Python
+Author: Vivian Zhelyazkova
+```
+[GitHub](https://github.com/VivianZhelyazkova)
