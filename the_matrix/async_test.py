@@ -1,12 +1,15 @@
 import requests
 from datetime import datetime
 
-username = input()
-api_url = f"https://api.github.com/users/{username}"
-response = requests.get(api_url)
-if response.status_code != 200:
-    print("Username does not exist!")
-    exit()
+while True:
+    username = input("Enter GitHub username: ")
+    api_url = f"https://api.github.com/users/{username}"
+    response = requests.get(api_url)
+    if response.status_code != 200:
+        print("Username does not exist!")
+    else:
+        break
+
 response_body = response.json()
 name = response_body["name"]
 email = response_body["email"]
