@@ -45,8 +45,7 @@ To explore a specific project, follow these steps:
 ## Contributing
 
 While this repository primarily showcases my personal projects, I welcome collaboration and feedback. If you have
-suggestions or improvements, feel free to open an issue or submit a pull request. Please refer
-to [CONTRIBUTING.md](CONTRIBUTING.md) for more details.
+suggestions or improvements, feel free to open an issue or submit a pull request.
 
 ## Feedback
 
