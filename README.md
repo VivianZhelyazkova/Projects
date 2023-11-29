@@ -27,7 +27,7 @@ The repository is structured as follows:
 - **Htmls and CSS practice**
 - **Matrix practice**
 - **Music store project**: With this project we are aiming to simulate the operation of a musical instruments store.
-- **Phone book project**
+- **Phone book project** A program that simulates the functionality of a phone book with the ability to add, edit and delete contacts.
 - **Movie The Matrix**
 
 Feel free to explore each project directory to learn more about the specific work I've done.
