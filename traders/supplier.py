@@ -20,3 +20,4 @@ class RetailSupp(Supplier):
 
     def __init__(self, name: str, address: str, working_hours: str):
         super().__init__(name, address, working_hours)
+        self.discount = 1
