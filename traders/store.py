@@ -1,4 +1,5 @@
 from abc import ABC
+import random
 
 
 class Store(ABC):
@@ -12,17 +13,20 @@ class Store(ABC):
 
 class MarketStall(Store):
 
-    def __init__(self, address: str, working_hours: str, area: float):
+    def __init__(self, address: str, working_hours: str):
+        area = random.randint(2, 10)
         super().__init__(address, working_hours, area, 50)
 
 
-class MarketStall(Store):
+class MallShop(Store):
 
-    def __init__(self, address: str, working_hours: str, area: float):
-        super().__init__(address, working_hours, area, 50)
+    def __init__(self, address: str, working_hours: str):
+        area = random.randint(10, 100)
+        super().__init__(address, working_hours, area, 150)
 
 
-class MarketStall(Store):
+class PushCart(Store):
 
-    def __init__(self, address: str, working_hours: str, area: float):
+    def __init__(self, address: str, working_hours: str):
+        area = random.randint(4, 6)
         super().__init__(address, working_hours, area, 50)
