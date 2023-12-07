@@ -12,7 +12,7 @@ class Trader:
         self.stores = stores
         self.suppliers = suppliers
 
-    def order(self, products: list[Product], supplier: Supplier):
+    def order(self, products: list[Product], supplier: Supplier, store: Store):
         discount = supplier.discount
         total_amount = 0
         for product in products:
@@ -22,4 +22,10 @@ class Trader:
             print("Total amount exceeds limit")
         else:
             self.capital -= final_sum
+            store.add_products(products)
+
+
+    def collect(self, store: Store):
+
+
 

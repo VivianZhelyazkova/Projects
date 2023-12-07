@@ -1,6 +1,8 @@
 from abc import ABC
 import random
 
+from product import Product
+
 
 class Store(ABC):
 
@@ -9,6 +11,16 @@ class Store(ABC):
         self.working_hours = working_hours
         self.area = area
         self.taxes = taxes
+        self.available_products: list[Product] = []
+
+    def add_products(self, products: list[Product]):
+        self.available_products += products
+
+    def sell_products(self):
+        number_of_products_to_sell = random.randint(1, len(self.available_products)-1)
+        profit = 0
+        for index in range(number_of_products_to_sell):
+            profit += self.available_products[index].price
 
 
 class MarketStall(Store):
