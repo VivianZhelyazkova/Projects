@@ -7,6 +7,7 @@ class Supplier(ABC):
         self.name = name
         self.address = address
         self.working_hours = working_hours
+        self.discount = 1
 
 
 class WholesaleSupp(Supplier):
