@@ -15,4 +15,4 @@ class Sole(Trader):
             raise Exception("Too many stores")
         if type(stores[0]) not in [MarketStall, PushCart]:
             raise Exception("The sole trader can only have a market stall or a push cart")
-            super().__init__(name, address, capital, stores, suppliers)
+        super().__init__(name, address, capital, stores, suppliers)
