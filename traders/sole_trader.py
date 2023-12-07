@@ -1,4 +1,4 @@
-from Practice.traders.store import Store
+from store import Store, MarketStall, PushCart
 from supplier import RetailSupp
 from trader import Trader
 
@@ -11,4 +11,8 @@ class Sole(Trader):
         for supplier in suppliers:
             if type(supplier) is not RetailSupp:
                 raise Exception("The sole trader only operates with retail suppliers")
-        super().__init__(name, address, capital, stores, suppliers)
+        if len(stores) > 1:
+            raise Exception("Too many stores")
+        if type(stores[0]) not in [MarketStall, PushCart]:
+            raise Exception("The sole trader can only have a market stall or a push cart")
+            super().__init__(name, address, capital, stores, suppliers)
