@@ -11,3 +11,5 @@ class Trader:
         self.stores = stores
         self.suppliers = suppliers
 
+
+    def order(self, products:list, supplier:Supplier):
