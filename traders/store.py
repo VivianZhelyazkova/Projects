@@ -5,6 +5,7 @@ from product import Product
 
 
 class Store(ABC):
+    MARGIN = 1.30
 
     def __int__(self, address: str, working_hours: str, area: float, taxes: float):
         self.address = address
@@ -17,10 +18,13 @@ class Store(ABC):
         self.available_products += products
 
     def sell_products(self):
-        number_of_products_to_sell = random.randint(1, len(self.available_products)-1)
+        number_of_products_to_sell = random.randint(1, len(self.available_products) - 1)
         profit = 0
         for index in range(number_of_products_to_sell):
             profit += self.available_products[index].price
+        self.available_products = self.available_products[number_of_products_to_sell:]
+        final_profit = profit * Store.MARGIN
+        return final_profit
 
 
 class MarketStall(Store):
