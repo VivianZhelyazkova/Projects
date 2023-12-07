@@ -13,6 +13,8 @@ class Store(ABC):
         self.area = area
         self.taxes = taxes
         self.available_products: list[Product] = []
+        self.balance = 0
+        self.number_of_sold_products = 0
 
     def add_products(self, products: list[Product]):
         self.available_products += products
@@ -24,6 +26,8 @@ class Store(ABC):
             profit += self.available_products[index].price
         self.available_products = self.available_products[number_of_products_to_sell:]
         final_profit = profit * Store.MARGIN
+        self.number_of_sold_products += number_of_products_to_sell
+        self.balance += profit
         return final_profit
 
 
