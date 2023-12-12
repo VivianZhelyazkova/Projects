@@ -1,4 +1,6 @@
-This program is a class structure representing the work of traders in Sofia. Each trader has the following characteristics:
+This program is a class structure representing the work of traders in Sofia.
+
+Each trader has the following characteristics:
 
 - Name
 - Registration address
