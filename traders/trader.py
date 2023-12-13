@@ -3,9 +3,6 @@ from store import Store
 from product import Product
 
 
-
-
- 
 class Trader:
 
     def __init__(self, name: str, address: str, capital: float, stores: list[Store], suppliers: list[Supplier]):
