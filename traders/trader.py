@@ -36,7 +36,7 @@ class Trader:
         available_products = sorted(store.available_products, key=lambda x: x.price)
         print(f"Available products:")
         for product in available_products:
-            print(f"name: {product.name}; price: {product.price}")
+            print(f"name: {product.name}; price: {product.price:.2f}")
 
     def pay_taxes(self, store: Store):
         if self.capital >= store.taxes:
