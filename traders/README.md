@@ -40,3 +40,24 @@ Each trader can perform the following actions:
 - Place an order of a certain value to a supplier. The order cannot exceed 50% of the trader's capital. If the supplier offers a discount, the price difference is returned to the trader. When ordering goods from a supplier, the trader receives a list of a randomly generated number of products, each with a name and a random price between 5 and 15 leva. The total price of the products represents the value of the delivery.
 - Collect turnover from the commercial object – 130% of the value of the ordered goods. (In fact, traders have a 30% markup). The turnover represents the profit from a random number of sold items.
 - Pay taxes to the state for the respective commercial object.
+
+## To implement a demo that: ##
+
+ 1. Creates 10 suppliers randomly - both retail and wholesale.
+  
+2. Creates 20 commercial objects randomly - stalls, shops, and booths.
+
+3. Creates one itinerant trader with a capital of 100 leva, one sole proprietorship (ET) with a capital of 500 leva, and one retail chain with a capital of 3000 leva.
+
+4. Assigns corresponding commercial objects to the traders randomly.
+
+5. Invokes a method that takes a list of created traders, initiating commercial activities for each trader. Commercial activities include:
+placing orders for goods from suppliers for each commercial object. The list of goods should be displayed on the screen, sorted by price in ascending order.
+collecting turnover from each commercial object - the total profit amount should be displayed on the screen. After a sale, the list of remaining goods in the store should be sorted by price again.
+paying monthly tax to the state for each commercial object.
+
+6. Displays the current monetary balance for each object after conducting commercial activities.
+
+7. Outputs the trader with the highest number of sold goods for the month.
+
+8. Outputs the trader with the highest amount of tax paid to the state.
