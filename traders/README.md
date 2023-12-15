@@ -1,4 +1,4 @@
-This program is a class structure representing the work of traders in Sofia.
+## This program is a class structure representing the work of traders in Sofia.
 
 Each trader has the following characteristics:
 
