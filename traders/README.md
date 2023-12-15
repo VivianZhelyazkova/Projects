@@ -41,7 +41,7 @@ Each trader can perform the following actions:
 - Collect turnover from the commercial object – 130% of the value of the ordered goods. (In fact, traders have a 30% markup). The turnover represents the profit from a random number of sold items.
 - Pay taxes to the state for the respective commercial object.
 
-## To implement a demo that: ##
+## To implement a demo that: 
 
  1. Creates 10 suppliers randomly - both retail and wholesale.
   
