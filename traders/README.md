@@ -45,7 +45,7 @@ Each trader can perform the following actions:
 
  1. Creates 10 suppliers randomly - both retail and wholesale.
   
-2. Creates 20 commercial objects randomly - stalls, shops, and booths.
+2. Creates 20 commercial objects randomly - stalls, shops, and carts.
 
 3. Creates one itinerant trader with a capital of 100 leva, one sole proprietorship (ET) with a capital of 500 leva, and one retail chain with a capital of 3000 leva.
 
