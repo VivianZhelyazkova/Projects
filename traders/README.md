@@ -3,6 +3,7 @@
 Each trader has the following characteristics:
 
 
+
 - Name
 - Registration address
 - Capital – initial amount to start the business.
