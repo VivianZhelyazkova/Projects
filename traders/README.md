@@ -60,5 +60,4 @@ paying monthly tax to the state for each commercial object.
 
 7. Outputs the trader with the highest number of sold goods for the month.
 
-
 8. Outputs the trader with the highest amount of tax paid to the state.
