@@ -27,7 +27,7 @@ class Trader:
             print("Ordered products:")
             products = sorted(products, key=lambda x: x.price)
             for product in products:
-                print(f"name: {product.name}; price: {product.price}")
+                print(f"Name: {product.name}; price: {product.price}")
 
     def collect(self, store: Store):
         profit = store.sell_products()
