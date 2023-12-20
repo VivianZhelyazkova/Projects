@@ -46,6 +46,3 @@ class Trader:
         else:
             raise Exception("Bankrupt!")
         print(f"Paid taxes for store on {store.address}: {store.taxes}")
-
-
-
