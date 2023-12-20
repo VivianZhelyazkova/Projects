@@ -38,7 +38,6 @@ class Trader:
         for product in available_products:
             print(f"Name: {product.name}; Price: {product.price}")
 
-
     def pay_taxes(self, store: Store):
         if self.capital >= store.taxes:
             self.capital -= store.taxes
