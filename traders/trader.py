@@ -30,7 +30,6 @@ class Trader:
                 print(f"Name: {product.name}; Price: {product.price}")
 
 
-
     def collect(self, store: Store):
         profit = store.sell_products()
         self.profit += profit
